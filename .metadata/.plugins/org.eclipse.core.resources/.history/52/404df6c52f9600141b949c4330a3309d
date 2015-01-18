@@ -1,0 +1,36 @@
+/*
+ * PC01-2.c
+ *
+ *  Created on: Jan 6, 2015
+ *      Author: Matthew Stephenson
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	if (*argc != 4) {
+		printf("Invalid number of arguments\n");
+		exit(1);
+	}
+
+	switch (*argv[1]) {
+	case '+':
+		printf("%i\n", atoi(argv[2]) + atoi(argv[3]));
+		break;
+	case '-':
+		printf("%i\n", atoi(argv[2]) - atoi(argv[3]));
+		break;
+	case '*':
+		printf("%i\n", atoi(argv[2]) * atoi(argv[3]));
+		break;
+	case '/':
+		printf("%i\n", atoi(argv[2]) / atoi(argv[3]));
+		break;
+	case '%':
+		printf("%i\n", atoi(argv[2]) % atoi(argv[3]));
+		break;
+	default:
+		printf("Invalid operator\n");
+	}
+}
