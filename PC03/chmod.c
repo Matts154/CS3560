@@ -23,7 +23,7 @@ int main (int argc, char *argv[]){
 		exit(1);
 	}
 	else
-		printf("Permissions on %s changed to %s\n", argv[1], argv[2]);
+		printf("Permissions on %s changed to %s\n", argv[2], argv[1]);
 
 	return 0;
 }
